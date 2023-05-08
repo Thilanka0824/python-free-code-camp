@@ -1,14 +1,9 @@
-# Ask user for name and print hello + name
-name = input("What's your name? ").strip().title()
+def main():
+    name = input("What is your name? ")
+    hello(name)
 
-# remove whitespace from str
-name = name.strip()
 
-# capitalize first letter of name
-name = name.capitalize()
+def hello(to="my dude"):
+    print("hello,", to)
 
-# use title() method
-name = name.title()
-
-# say hello to user
-print(f"hello, {name}")
+main()
